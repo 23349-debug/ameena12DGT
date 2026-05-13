@@ -1,13 +1,15 @@
 
  logo.png {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 18px;
+    left: 18px;
     width: 100px;
 }
  h1 {
+ color: white;
     margin-top: 170px;
     text-align: center;
+
 }
 
 
@@ -18,17 +20,12 @@
     cursor: pointer;
 }
 
- h2 {
-    margin-top: 25px;
-    text-align: center;
-}
-h1 {
-color: white;
-}
 
 
 
-body{
+
+
+body {
 background-color: navy;
 }
 
@@ -36,22 +33,18 @@ background-color: navy;
 .hamburger span {
   height: 3px;
   width: 100%;
-  background-color: #333;
+  background-color: navy ;
   border-radius: 10px;
+  color: white;
 }
 
 p {
     color: #fafcff;
-    font-size: 18px;
+    font-size: 24px;
+    text-align: center
 }
 
 
 
 
-
- /*logo.png {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100px;  */
 
