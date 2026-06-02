@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Main screen</title>
+    <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
+
 <body>
+
+  <ul class="menu">
+    <li><a class="menuItem" href="index.html">Home</a></li>
+    <li><a class="menuItem" href="pg2.html">Workshop Schedule</a></li>
+    <li><a class="menuItem" href="#">About</a></li>
+    <li><a class="menuItem" href="#">Contacts</a></li>
+  </ul>
+  <button class="hamburger">
+
+    <i class="menuIcon material-icons">menu</i>
+    <i class="closeIcon material-icons">close</i>
+
+  </button>
+
+<header>
+
+
+ <a href="https://www.mrgs.school.nz/">
+    <img src="images\finally.png" alt="phoneix">
+</a>
+
+
+    <p class=" " id=" "></p>
+
+
+
+
+</header>
+
+
+
+
+
+
+<script>
+
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach(
+  function(menuItem) {
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
+
+
+</script>
 
 </body>
 </html>
+
+</head>
+<body>
+
