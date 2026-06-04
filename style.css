@@ -88,6 +88,37 @@ padding-left:500;
 
 
 
-.searchForm {
-text-align: center;
+#searchInput {
+    width: 1000px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+
+#searchForm button {
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center:
+}
+
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+#searchForm {
+    display: flex;
+    gap: 5px;
 }
