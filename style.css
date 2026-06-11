@@ -89,7 +89,7 @@ padding-left:500;
 
 
 #searchInput {
-    width: 1000px;
+    width: 1500px;
     height: 50px;
     padding: 0 15px;
     font-size: 18px;
@@ -124,6 +124,10 @@ padding-left:500;
 }
 
 
+.grid-parent. {
+    display: grid;
+}
+
 h2{  color: white;
     margin-bottom: 1px;
     margin-top: 5px;
@@ -140,3 +144,4 @@ h3{  color: white;
     font-family: sans-serif;
     padding-left: 65px;
 }
+
