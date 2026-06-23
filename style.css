@@ -145,3 +145,19 @@ h3{  color: white;
     padding-left: 65px;
 }
 
+.parent {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; background-color: #f2ebce }
+.div2 { grid-area: 2 / 1 / 7 / 2; }
+.div3 { grid-area: 1 / 2 / 2 / 7; }
+.div4 { grid-area: 2 / 2 / 7 / 3; }
+.div5 { grid-area: 2 / 3 / 7 / 4; }
+.div6 { grid-area: 2 / 4 / 7 / 5; }
+.div7 { grid-area: 2 / 5 / 7 / 6; }
+.div8 { grid-area: 2 / 6 / 7 / 7; }
