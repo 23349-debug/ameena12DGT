@@ -1,8 +1,8 @@
 
 
  h1 {
- color: white;
-    margin-top: 200px;
+color: white;
+     margin-top: 200px;
     text-align: center;
     font-size: 80px;
     font-family: sans-serif;
@@ -12,9 +12,10 @@
 
 
 body {
-background-color: navy;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #003366, #06125c, #10238f, #06187a);
 }
-
 
 
 p {
@@ -22,6 +23,24 @@ p {
     font-size: 45px;
     font-family: sans-serif;
     text-align: center
+}
+
+
+.slide-up {
+  animation: slideUpAnimation 1s ease-out forwards;
+  opacity: 0; /* Starts invisible so it can fade in */
+}
+
+/* 2. Create the actual movement timeline */
+@keyframes slideUpAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* Starts 40 pixels lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* Moves up to its original position */
+  }
 }
 
 * {
@@ -69,7 +88,7 @@ p {
   right: 0;
   bottom: 0;
   z-index: 99;
-  background: navy;
+  background: #06125c;
   color: green;
   list-style: none;
   padding-top: 4rem;
@@ -80,7 +99,7 @@ p {
 }
 
 img {
-width: 120px;
+width: 150px;
 text-align: left;
 margin-left:20;
 padding-left:500;
@@ -144,6 +163,8 @@ h3{  color: white;
     font-family: sans-serif;
     padding-left: 65px;
 }
+
+
 
 .parent {
 display: grid;
@@ -358,6 +379,16 @@ color: black;
 .red{
    color: red;
     font-size: 45.5px;
+
+
+}
+
+
+.about{
+  margin-top: 200px;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
 
 
 }
