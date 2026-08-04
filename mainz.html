@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>Main screen</title>
     <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
-
 
 
   <ul class="menu">
@@ -25,6 +24,7 @@
 
   </button>
 
+
 <header>
 
 
@@ -36,7 +36,7 @@
 
 
 
-<h2 class="slide-up"> Workshop Learning<br>Centre Schedule</h2>
+<h2 class="slide-up">Workshop Learning<br>Centre Schedule</h2>
 
 </header>
 <div class="search-container">
@@ -54,16 +54,18 @@
     </div>
 
 <div class="parent">
+
+
 <div class="div1">
 <p> Week 4
 Term 3</p>
-
 </div>
 
 <div class="div2">
 <p> Monday</p>
-
 </div>
+
+
 
 <div class="div3">
     <p> Tuesday</p>
@@ -71,38 +73,35 @@ Term 3</p>
 
 <div class="div4">
     <p> Wednesday</p>
-
-
 </div>
+
+
 
 <div class="div5">
-
     <p> Thursday</p>
-
 </div>
+
 
 
 <div class="div6">
-
 <p> Friday</p>
-
 </div>
 
 
 <div class="div7">
     <p> Interval</p>
     <p> 11:15am - 11:40am</p>
-
-
-
 </div>
+
+
 
 
 <div class="div8">
 <p> Lunchtime</p>
     <p> 1:30pm - 2:10pm </p>
-
 </div>
+
+
 
 
 <div class="div9">
@@ -111,149 +110,139 @@ Term 3</p>
 </div>
 
 
+
 <div class="div10">
 <p class="hi"> All Year Levels <br> MAT <br> A7</p>
-
 </div>
 
 
 <div class="div11">
 <p class="hi"> All Year Levels <br> ENG <br> E1</p>
-
-
-
 </div>
+
+
 
 
 <div class="div12">
-
 <p class="red"> No Available <br> Workshops</p>
-
-
 </div>
+
 
 
 <div class="div13">
 <p class="hi"> Year 12/13 <br> BIO <br> S7</p>
-
-
 </div>
+
 
 
 <div class="div14">
 <p class="red"> No Available <br> Workshops</p>
-
-
-
 </div>
+
 
 
 <div class="div15">
 <p class="hi"> All Year Levels <br> Homework Centre <br> D5</p>
-
-
-
 </div>
+
 
 
 <div class="div16">
 <p class="red"> No School</p>
-
-
-
 </div>
+
+
 
 
 <div class="div17">
 <p class="red"> No School</p>
-
-
-
 </div>
+
+
 
 
 <div class="div18">
 <p class="red"> No School</p>
-
-
 </div>
+
+
 
 
 <div class="div19">
 <p class="red"> No Available <br> Workshops</p>
-
-
 </div>
+
+
 
 
 <div class="div20">
 <p class="hi"> All Year Levels <br> COM <br> E16</p>
-
-
-
 </div>
+
+
 
 
 <div class="div21">
 <p class="hi"> All Year Levels <br> Homework Centre <br> D5</p>
-
-
-
 </div>
+
+
 
 
 <div class="div22">
 <p class="hi"> Year 9/10 <br> SCI <br> S5</p>
-
-
-
 </div>
+
+
 
 
 <div class="div23">
-
 <p class="hi"> Year 12/13 <br> PHY <br> P5</p>
-
-
 </div>
+
 
 
 <div class="div24">
 <p class="hi"> All Year Levels <br> Homework Centre <br> D5</p>
 </div>
 
+
 </div>
 
-
+</div>
 
 
 
 
 <script>
 
-    const menu = document.querySelector(".menu");
-    const menuItems = document.querySelectorAll(".menuItem");
-    const hamburger = document.querySelector(".hamburger");
-    const closeIcon = document.querySelector(".closeIcon");
-    const menuIcon = document.querySelector(".menuIcon");
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
-    function toggleMenu() {
-        if (menu.classList.contains("showMenu")) {
-            menu.classList.remove("showMenu");
-            closeIcon.style.display = "none";
-            menuIcon.style.display = "block";
-        } else {
-            menu.classList.add("showMenu");
-            closeIcon.style.display = "block";
-            menuIcon.style.display = "none";
-        }
-    }
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
 
-    hamburger.addEventListener("click", toggleMenu);
+hamburger.addEventListener("click", toggleMenu);
 
-    menuItems.forEach(
-        function (menuItem) {
-            menuItem.addEventListener("click", toggleMenu);}
+menuItems.forEach(
+  function(menuItem) {
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
+
+
 </script>
 
 </body>

@@ -6,6 +6,7 @@ color: white;
     text-align: center;
     font-size: 150px;
     font-family: sans-serif;
+
 }
 
 
@@ -29,6 +30,7 @@ p {
 .slide-up {
   animation: slideUpAnimation 1s ease-out forwards;
   opacity: 0; /* Starts invisible so it can fade in */
+  font-size: 150px;
 }
 
 /* 2. Create the actual movement timeline */
