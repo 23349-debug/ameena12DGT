@@ -52,6 +52,29 @@
 
   <p class="slide-up"> Explore the schedule and find a workshop that best interests you! </p>
 
+
+   <div class="chat-box">
+    <div class="chat-box-header">
+      <h3>Message Us</h3>
+      <p id="close-btn">&times;</p>
+    </div>
+
+    <div class="chat-box-body">
+      <div class="message bot">Hello! How can I help you today?</div>
+      <div class="message user">Hi! I want to know more about your services.</div>
+    </div>
+
+    <div class="chat-box-footer">
+      <input id="userInput" type="text" placeholder="Type your message...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <div class="chat-button" id="chatBtn">💬 Chat</div>
+
+
+
+
 <script>
 
 const menu = document.querySelector(".menu");
@@ -81,6 +104,45 @@ menuItems.forEach(
   }
 )
 
+
+// Toggle Chatbox Visibility
+const chatBox = document.querySelector('.chat-box');
+const chatBtn = document.getElementById('chatBtn');
+const closeBtn = document.getElementById('close-btn');
+const sendBtn = document.getElementById('sendBtn');
+const userInput = document.getElementById('userInput');
+const chatBody = document.querySelector('.chat-box-body');
+
+chatBtn.addEventListener('click', () => {
+  chatBox.style.display = 'flex';
+  chatBtn.style.display = 'none';
+});
+
+closeBtn.addEventListener('click', () => {
+  chatBox.style.display = 'none';
+  chatBtn.style.display = 'block';
+});
+
+// Handle Sending Messages
+sendBtn.addEventListener('click', () => {
+  const text = userInput.value.trim();
+  if (text === '') return;
+
+  const userMessage = document.createElement('div');
+  userMessage.classList.add('message', 'user');
+  userMessage.textContent = text;
+  chatBody.appendChild(userMessage);
+
+  userInput.value = '';
+
+  // Fake bot reply
+  const botMessage = document.createElement('div');
+  botMessage.classList.add('message', 'bot');
+  botMessage.textContent = 'Thanks for your message!';
+  chatBody.appendChild(botMessage);
+
+  chatBody.scrollTop = chatBody.scrollHeight;
+});
 
 </script>
 
